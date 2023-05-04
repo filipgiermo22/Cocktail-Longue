@@ -121,6 +121,7 @@ p {
 
 #pre-message {
   font-size: 3rem;
+  width: 70%;
 }
 
   h1 {
@@ -225,10 +226,13 @@ p {
     }
     
     #pre-message {
-  align-self: center;
-  margin-top: 2rem;
-  text-align: center;
-  }
+      font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
     
     #button-container {
       position: sticky;

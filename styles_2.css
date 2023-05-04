@@ -223,15 +223,15 @@ p {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      padding: 0rem, 1rem, 1rem, 1rem;
+      padding: 0rem, 1rem, 1rem, 0rem;
     }
     
     #pre-message {
       font-size: 2rem;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  transform: translate(-45%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
     

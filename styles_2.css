@@ -119,6 +119,9 @@ p {
   flex-basis: 45%;
 }
 
+#pre-message {
+  font-size: 3rem;
+}
 
   h1 {
     font-size: 5rem;

@@ -49,15 +49,27 @@ const renderCocktail = cocktail => {
         <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
       </div>
       <div class="cocktail-info">
-        <div class="cocktail-ingredients">
-          <p><strong>Ingredients:</strong></p>
-          <ul>
-            ${Object.keys(cocktail)
-              .filter(key => key.startsWith('strIngredient') && cocktail[key])
-              .map(key => `<li>${cocktail[key]} - ${cocktail['strMeasure'+key.slice(13)]}</li>`)
-              .join('')
-            }
-          </ul>
+       <p><strong>Ingredients:</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${Object.keys(cocktail)
+                .filter(key => key.startsWith('strIngredient') && cocktail[key])
+                .map((key, index) => `
+                  <tr>
+                    <td>${cocktail[key]}</td>
+                    <td>${cocktail['strMeasure'+(index+1)]}</td>
+                  </tr>
+                `)
+                .join('')
+              }
+            </tbody>
+          </table>
         </div>
         <div class="cocktail-instructions">
           <p><strong>Instructions:</strong></p>

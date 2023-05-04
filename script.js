@@ -49,12 +49,11 @@ const renderCocktail = cocktail => {
         <img src="${cocktail.strDrinkThumb}" alt="${cocktail.strDrink}">
       </div>
       <div class="cocktail-info">
-       <p><strong>Ingredients:</strong></p>
           <table>
             <thead>
               <tr>
-                <th>Ingredient</th>
-                <th>Amount</th>
+                <th>Ingredients</th>
+                <th>Amounts</th>
               </tr>
             </thead>
             <tbody>

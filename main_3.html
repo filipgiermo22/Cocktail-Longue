@@ -12,6 +12,9 @@
       <h1>Cocktail Longue</h1>
     </header>
     <main>
+      <div id="pre-message">
+        <p>Let the fate decide what you will drink tonight or look for your favourite drink. Cheers!</p>
+      </div>
     <div id="button-container">
       <button id="random-btn">Random</button>
         <input type="text" id="search-input" placeholder="Search by name">
@@ -23,5 +26,12 @@
       <p>&copy; 2023 Cocktail Longue. None rights reserved </p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      // Remove the pre-message once the page has loaded
+      window.addEventListener("load", function() {
+        var preMessage = document.getElementById("pre-message");
+        preMessage.parentNode.removeChild(preMessage);
+      });
+    </script>
   </body>
 </html>

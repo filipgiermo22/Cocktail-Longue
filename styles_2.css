@@ -229,9 +229,9 @@ p {
     #pre-message {
       font-size: 2rem;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 50%;
-  transform: translate(-30%, -50%);
+  transform: translate(-45%, -50%);
   z-index: 1;
 }
     

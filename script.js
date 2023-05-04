@@ -54,7 +54,7 @@ const renderCocktail = cocktail => {
           <ul>
             ${Object.keys(cocktail)
               .filter(key => key.startsWith('strIngredient') && cocktail[key])
-              .map(key => `<li>${cocktail[key]}</li>`)
+              .map(key => `<li>${cocktail[key]} - ${cocktail['strMeasure'+key.slice(13)]}</li>`)
               .join('')
             }
           </ul>
